@@ -35,3 +35,7 @@ for l in listlibs:
 	src = "/usr/local/lib/" + "lib" + l + ".dylib"
 	tgt = "./osx/" + "lib" + l + ".dylib"
 	os.system(f"cp {src} {tgt}")
+
+	src = "/usr/local/lib/" + "lib" + l + ".7.dylib"
+	tgt = "./osx/" + "lib" + l + ".7.dylib"
+	os.system(f"cp {src} {tgt}")
